@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.w {
+    width: 1202px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+body{
+    background-color: #f3f5f7;
+    /* height: 2000px; */
+}
+
+/* 清除浮动 */
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+  }
+  .clearfix:after {
+    clear:both;
+  }
+  .clearfix {
+     *zoom:1;
+  }   
+
+.nav {
+    height: 43px;
+    margin-top: 30px;
+    /* background-color: pink; */
+}
+
+.learnol {
+    float: left;
+    width: 197px;
+    height: 43px;
+    margin-right: 70px;
+    /* background-color: aqua; */
+
+}
+.navname ul li {
+    float: left;
+    line-height: 43px;
+    margin-left: 20px;
+    /* background-color: brown; */
+    
+}
+
+.navname ul li a{
+    font-size: 18px;
+    color: #050505;
+
+}
+.navname ul li:hover {
+    border-bottom: 2px solid #00a4ff;
+    
+}
+
+.search input {
+    float: left;
+    height: 40px;
+    width: 340px;
+    margin-left: 94px;
+    padding-left: 20px;
+    border: 1.5px solid #00a4ff;
+    border-right: none;
+    font-size: 14px;
+    color: #a7a8a9;
+}
+.search button {
+    float: left;
+    height: 43px;
+    width: 52px;
+    background-color: #00a4ff;
+    border: 0;
+    background-image: url(images/fa-search.png);
+
+}
+.searchbottom image {
+    margin: auto;
+}
+
+.nameinfo {
+    float: left;
+    margin-left: 32px;
+    color: #a7a8a9;
+    font-size: 18px;
+    line-height: 43px;
+}
+.nameinfo img {
+    float: left;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+
+}
+
+.big {
+    height: 420px;
+    margin-top: 30px;
+    background-color: #1c036c;
+}
+
+.big .w {
+    height: 420px;
+    background-image: url(images/banner2.png);
+}
+
+.studylist {
+    float: left;
+}
+.studylist ul {
+    /* float: left; */
+    height: 420px;
+    width: 190px;
+    background: rgba(0, 0, 0, .3);
+}
+
+.studylist ul li {
+    height: 46.66px;
+    line-height: 46.66px;
+    text-indent: 21px;
+    /* color: white; 没办法这样修改li中的链接的文字? */
+}
+
+.studylist ul li a {
+    float: left;
+    color: #d3d1d9;
+    /* 没有给文字的大小 */
+}
+.studylist ul li span {
+    float: right;
+    color: #d3d1d9;
+    padding-right: 21px;
+}
+.studylist ul li:hover {
+    background: rgba(0, 0, 0, 0.35);
+    /* color: #0393d9; 这句话无效 */
+}
+.studylist ul li a:hover {
+    color: #0393d9;
+}
+.classchart {
+    float: right;
+    height: 300px;
+    width: 230px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.classchart h1 {
+    /* 这里的h1可以直接给宽和高，不用转变为块元素？ */
+    /* display: block; */
+    width: 230px;
+    height: 49px;
+    text-align: center;
+    line-height: 49px;
+    font-size: 18px;
+    /* 标题都是自动加粗的，所以这里可以不用加粗 */
+    /* font-weight: 700; */
+    color: white;
+    background-color: #9bceea;
+}
+
+.classchart .divide {
+    width: 189px;
+    height: 31px;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* background-color: pink; */
+    border-bottom: 1px solid #efefef;
+}
+.classchart .divide h2 {
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+.classchart .divide h3 {
+    font-size: 10px;
+    color: #a5a5a5;
+
+}
+.classchart button {
+    width: 200px;
+    height: 39px;
+    margin-top: 10px;
+    margin-left: 14px;
+    border: 2px solid #26abff;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 39px;
+    color: #26abff;
+}
+.recomnav {
+    height: 60px;
+    margin-top: 10px;
+    background-color: white;
+}
+/* 没有给ul浮动 */
+.recomnav ul li{
+    float: left;
+    /* background-color: #fff; */
+
+}
+.recomnav ul li a {
+    /* height: 60px;这里可以不用给高度，利用行高可以自动撑开 */
+    /* padding-left: 33px;
+    padding-right: 33px;这里两句话可以合并为一句话 */
+    padding: 0 33px;
+    border-right: 1px solid #bfbfbf;
+    /* 行高可以通过父元素继承而来 */
+    line-height: 60px;
+    font-size: 16px;
+}
+
+.recomnav ul li .first {
+    color: #00a4ff;
+}
+.recomnav ul li .last{
+    border-right: none;
+}
+
+.recomnav ul li a:hover {
+    color: #00a4ff;
+}
+.recomnav .hobbychange {
+    float: right;
+    height: 60px;
+    padding-right: 26px;
+    font-size: 14px;
+    line-height: 60px;
+    color: #00a4ff;
+}
+
+.recomgoods {
+    /* 这里没给高度，下面的内容即使有margin-top,也会顶上来，这是为什么？*/
+    /* 这个大盒子是不是不应该给高度，而是让下面的内容自动撑开 */
+    height: 602px;
+    /* background-color:blue; */
+    margin-top: 34px;
+
+}
+.shortnav {
+    float: left;
+    height: 42px;
+    width: 1202px;
+    /* 这里的margin-top感觉给大盒子写上会更加自然 */
+    /* margin-top: 34px; */
+    /* background-color: pink; */
+}
+.shortnav h6 {
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #838485;
+}
+/* 能不起类名就不要起，这里的.all可以换成a的 */
+.shortnav .all {
+    float: right;
+    line-height: 42px;
+    margin-right: 31px;
+    font-size: 12px;
+    color: #a5a5a5;
+
+}
+.kuangkuang {
+    height: 559px;
+    /* background-color: sienna; */
+}
+
+.box {
+    float: left;
+    width: 225px;
+    height: 271px;
+    /* background-color: yellow; */
+    margin-right: 15px;
+    box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .3);
+}
+
+.right {
+    margin-right: 0px;
+}
+.down {
+    margin-top: 16px;
+}
+
+
+.box img {
+    width: 100%;
+    /* width: 228px;用上面的语句就可以不用回头找大小了 */
+    height: 155px;
+    
+}
+.box h2 {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 21px;
+    padding-left: 25px;
+    padding-right: 19px;
+}
+/* 利用层叠性可以省很多代码 */
+.box .degree {
+    margin-top: 17px;
+    padding-right: 12px;
+    /* border-right: 1px solid #999999; */
+    float: left;
+    font-size: 12px;
+    color: #ff7c2d;
+    padding-left: 25px;
+}
+
+.box .nums {
+    margin-top: 17px;
+    margin-left: 12px;
+
+    float: left;
+    font-size: 12px;
+    color: #999999;
+
+}
+.welcom {
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 42px;
+    /* text-align: center;这句话没办法控制连接居中 */
+    font-size: 16px;
+    color: #868686;
+}
+.shortnav .first {
+    padding-left: 354px;
+}
+.shortnav .last {
+    padding-right: 354px;
+}
+.shortnav .welcom:hover {
+    color: #00a4ff;
+}
+.codingrecom {
+    height: 436px;
+    /* background-color: rosybrown; */
+}
+.intro {
+    float: left;
+    width: 230px;
+    height: 391px;
+
+}
+.content {
+    float: right;
+    width: 958px;
+    height: 391px;
+    /* background-color: seagreen; */
+}
+.content .topcontent {
+    float: right;
+    margin-bottom: 19px;
+    width: 956px;
+    height: 103px;
+}
+
+.codingrecom {
+    margin-top: 34px;
+}
+.machine {
+    margin-top: 34px;
+    height: 320px;
+}
+.infrontof {
+    margin-top: 34px;
+    height: 320px;
+}
+
+.info {
+    height: 417px;
+    margin-top: 34px;
+    background-color: #fff;
+}
+.bc {
+    height: 100%;
+}
+
+.download {
+    float: left;
+    margin-top: 31px;
+    margin-left: 20px;
+}
+.download p {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    color: #666666;
+}
+.download a {
+    display: block;
+    width: 118px;
+    height: 34px;
+    /* margin: auto; */
+    border: 2px solid #00a4ff;
+    text-align: center;
+    line-height: 34px;
+    font-size: 16px;
+    color: #00a4ff;
+
+}
+.about {
+    float: right;
+    display: inline-block;
+    margin-top: 33px;
+    margin-left: 144px;
+}
+.about dt {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #333333;
+}
+.about dd {
+    font-size: 12px;
+    line-height: 22px;
+
+}
+.about dd a:hover {
+    color: 00a4ff;
+}
